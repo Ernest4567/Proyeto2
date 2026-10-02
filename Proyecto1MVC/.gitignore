@@ -1,0 +1,137 @@
+# Node.js dependencies
+node_modules/
+jspm_packages/
+web_modules/
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Text Editor configurations
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# Diagnostic reports (Node.js)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data & temp files
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage and test outputs
+coverage/
+.nyc_output/
+
+# Build & Dist directories
+dist/
+build/
+Explicación de las secciones principales
+node_modules/: Evita subir la carpeta pesada de paquetes. Cualquier colaborador o servidor de despliegue instalará las dependencias ejecutando npm install.
+
+.env / *.env: Esencial por seguridad. Evita subir credenciales sensibles como contraseñas de la base de datos PostgreSQL, claves de APIs o variables de entorno.
+
+*.log / logs: Omite los archivos de registro o errores generados durante las pruebas locales.
+
+Archivos de SO y Editores (.DS_Store, .vscode/, .idea/): Evita incluir configuraciones privadas de tu editor de código (VS Code, WebStorm) o archivos basura del sistema operativo (macOS/Windows).
+
+Cómo aplicarlo en tu proyecto
+En la raíz de tu proyecto, crea un archivo nombrado exactamente .gitignore (con el punto inicial).
+
+Pega el contenido anterior (o si descargas el archivo adjunto, renombralo de gitignore.txt a .gitignore).
+
+Si ya habías subido por error carpetas como node_modules a Git antes de crear este archivo, ejecuta en tu terminal:
+
+Bash
+git rm -r --cached node_modules
+git commit -m "Eliminar node_modules del rastreo de Git"
+
+
+
+Tus conversaciones de Tecnológico Mario Molina no se usan para mejorar nuestros modelos. Gemini es una IA y puede cometer errores. Tu privacidad y GeminiSe abre en una ventana nueva
+
+Analyzing Response Structure
+# Node.js dependencies
+node_modules/
+jspm_packages/
+web_modules/
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Text Editor configurations
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# Diagnostic reports (Node.js)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data & temp files
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage and test outputs
+coverage/
+.nyc_output/
+
+# Build & Dist directories
+dist/
+build/
+gitignore.txt
+Mostrando gitignore.txt.
